@@ -1,7 +1,17 @@
 <style>
+div.section {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+
 h1.header {
   color: steelblue;
   font-size:40px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
 }
 
 .vida-thumbnail {
