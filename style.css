@@ -1,4 +1,46 @@
+<style>
 h1.header {
   color: steelblue;
   font-size:40px;
 }
+
+.vida-thumbnail {
+  width: 28%;
+  height: 210px;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  transiation: border .2s ease-in-out;
+}
+
+.vida-thumbnail img {
+  height: 200px;
+  padding: 4px;
+  background-color: white;
+}
+
+.vida-thumbnail:after {
+    font-size: 40px;
+    text-align: center;
+    content: attr(data-content);
+    color:#fff;
+    position: absolute;
+    width:100%; height:100%;
+    top:0px; left:0px;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30%;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.vida-thumbnail:hover:after {
+    opacity:0.8;
+}
+</style>
